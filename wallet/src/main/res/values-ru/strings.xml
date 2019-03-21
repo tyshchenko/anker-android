@@ -63,7 +63,7 @@
     <string name="trade">обмен</string>
     <string name="receive">получить</string>
     <!-- Welcome fragment -->
-    <string name="welcome_text">Добро пожаловать в OpenWallet</string>
+    <string name="welcome_text">Добро пожаловать в AnkerWallet</string>
     <string name="create_wallet">Создать новый кошелёк</string>
     <string name="restore_wallet">Восстановить кошелёк</string>
     <string name="test_wallet">Тестовый кошелёк</string>
@@ -89,7 +89,7 @@
     <!-- Wallet activity -->
     <string name="test_wallet_message">Это тестовый кошелек, где Вы можете отправлять и получать Bitcoin, Litecoin, Dogecoin используя testnet.\n\nЕсли Вы хотите использовать кошелёк с настоящими деньгами, пожалуйста зайдите в: <b>Настройки &gt; Восстановить кошелёк &gt; Создать новый кошелёк</b>.</string>
     <string name="wallet_update_title">Доступна новая версия</string>
-    <string name="wallet_update_message">Доступна новая версия OpenWallet, она содержит новые функции и исправления.</string>
+    <string name="wallet_update_message">Доступна новая версия AnkerWallet, она содержит новые функции и исправления.</string>
     <string name="pay_with">Отправить используя</string>
     <string name="exchange_and_pay_title">Обменять и отправить</string>
     <!-- PayToDialog-->
@@ -175,8 +175,8 @@
         <item quantity="many">%d секунд</item>
     </plurals>
     <!-- About Activity -->
-    <string name="title_activity_about">О OpenWallet</string>
-    <string name="app_name_long">OpenWallet для Android</string>
+    <string name="title_activity_about">О AnkerWallet</string>
+    <string name="app_name_long">AnkerWallet для Android</string>
     <string name="about_licence">Программа с открытым исходным кодом\nhttps://gitlab.com/openwallet/openwallet-android\nИсходный код открыт на основе лицензии GNU General Public License 3</string>
     <string name="about_credits_translations">Переводы выполнили:</string>
     <string name="about_credits_coinomi">Forked from Coinomi\nhttps://coinomi.com/</string>
