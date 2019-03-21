@@ -5,7 +5,7 @@ android {
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "com.openwallet.wallet.dev"
+        applicationId "com.openwallet.wallet"
         minSdkVersion 10
         targetSdkVersion 23
         versionCode 56

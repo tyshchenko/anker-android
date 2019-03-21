@@ -47,6 +47,7 @@ import com.openwallet.core.coins.VertcoinMain;
 import com.openwallet.core.coins.VpncoinMain;
 import com.openwallet.core.coins.RichcoinMain;
 import com.openwallet.core.coins.IxcoinMain;
+import com.openwallet.core.coins.AnkcoinMain;
 import com.openwallet.core.network.CoinAddress;
 import com.openwallet.stratumj.ServerAddress;
 import com.google.common.collect.ImmutableList;
@@ -215,6 +216,8 @@ public class Constants {
                                                     new ServerAddress("richx-cce-2.coinomi.net", 5046)),
             new CoinAddress(IxcoinMain.get(),       new ServerAddress("ixc-cce-1.coinomi.net", 5047),
                                                     new ServerAddress("ixc-cce-2.coinomi.net", 5047))
+            new CoinAddress(AnkcoinMain.get(),      new ServerAddress("178.128.165.28", 5055),
+                                                    new ServerAddress("178.128.167.244", 5055))
     );
 
     public static final HashMap<CoinType, Integer> COINS_ICONS;
@@ -264,6 +267,7 @@ public class Constants {
         COINS_ICONS.put(CoinID.CLUBCOIN_MAIN.getCoinType(), R.drawable.clubcoin);
         COINS_ICONS.put(CoinID.RICHCOIN_MAIN.getCoinType(), R.drawable.richcoin);
         COINS_ICONS.put(CoinID.IXCOIN_MAIN.getCoinType(), R.drawable.ixcoin);
+        COINS_ICONS.put(CoinID.ANKCOIN_MAIN.getCoinType(), R.drawable.ankcoin);
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
@@ -306,6 +310,7 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.EGULDEN_MAIN.getCoinType(), "https://chainz.cryptoid.info/efl/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.RICHCOIN_MAIN.getCoinType(), "https://explorer.richcoin.us/transaction?transaction=%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.IXCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/ixc/tx.dws?%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.ANKCOIN_MAIN.getCoinType(), "https://explorer.ankerid.com/tx/%s");
     }
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();
@@ -318,46 +323,47 @@ public class Constants {
 
     public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
             BitcoinMain.get(),
-            AsiacoinMain.get(),
-            AuroracoinMain.get(),
-            BatacoinMain.get(),
-            BlackcoinMain.get(),
+//            AsiacoinMain.get(),
+//            AuroracoinMain.get(),
+//            BatacoinMain.get(),
+//            BlackcoinMain.get(),
 //            BurstMain.get(),
-            CanadaeCoinMain.get(),
-            CannacoinMain.get(),
-            ClamsMain.get(),
-            ClubcoinMain.get(),
+//            CanadaeCoinMain.get(),
+//            CannacoinMain.get(),
+//            ClamsMain.get(),
+//            ClubcoinMain.get(),
             DashMain.get(),
-            DigibyteMain.get(),
-            DigitalcoinMain.get(),
+//            DigibyteMain.get(),
+//            DigitalcoinMain.get(),
             DogecoinMain.get(),
-            EguldenMain.get(),
-            FeathercoinMain.get(),
-            GcrMain.get(),
-            GuldenMain.get(),
-            IxcoinMain.get(),
-            JumbucksMain.get(),
+//            EguldenMain.get(),
+//            FeathercoinMain.get(),
+//            GcrMain.get(),
+//            GuldenMain.get(),
+//            IxcoinMain.get(),
+//            JumbucksMain.get(),
             LitecoinMain.get(),
-            MonacoinMain.get(),
-            NamecoinMain.get(),
-            NeoscoinMain.get(),
-            NovacoinMain.get(),
-            NuBitsMain.get(),
-            NuSharesMain.get(),
+//            MonacoinMain.get(),
+//            NamecoinMain.get(),
+//            NeoscoinMain.get(),
+//            NovacoinMain.get(),
+//            NuBitsMain.get(),
+//            NuSharesMain.get(),
 //            NxtMain.get(),
-            OKCashMain.get(),
-            ParkbyteMain.get(),
-            PeercoinMain.get(),
-            PotcoinMain.get(),
-            ReddcoinMain.get(),
-            RichcoinMain.get(),
-            RubycoinMain.get(),
-            ShadowCashMain.get(),
-            VergeMain.get(),
-            VertcoinMain.get(),
-            VpncoinMain.get(),
-            BitcoinTest.get(),
-            LitecoinTest.get(),
-            DogecoinTest.get()
+//            OKCashMain.get(),
+//            ParkbyteMain.get(),
+//            PeercoinMain.get(),
+//            PotcoinMain.get(),
+//            ReddcoinMain.get(),
+//            RichcoinMain.get(),
+//            RubycoinMain.get(),
+//            ShadowCashMain.get(),
+//            VergeMain.get(),
+//            VertcoinMain.get(),
+//            VpncoinMain.get(),
+//            BitcoinTest.get(),
+//            LitecoinTest.get(),
+//            DogecoinTest.get(),
+              AnkcoinMain.get()
     );
 }

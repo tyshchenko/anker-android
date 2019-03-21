@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">OpenWallet (dev)</string>
-    <string name="app_package" translatable="false">com.openwallet.wallet.dev</string>
-    <string name="openwallet_website" translatable="false">https://openwallet.xyz</string>
+    <string name="app_name" translatable="false">AnkerWallet</string>
+    <string name="app_package" translatable="false">com.openwallet.wallet</string>
+    <string name="openwallet_website" translatable="false">https://ankerid.com</string>
     <string name="almost_equal_to" translatable="false">≈</string>
     <string name="action_scan_qr_code">Scan</string>
     <string name="action_share">Share</string>
@@ -76,7 +76,7 @@
     <string name="trade">Exchange</string>
     <string name="receive">Receive</string>
     <!-- Welcome fragment -->
-    <string name="welcome_text">Welcome to OpenWallet</string>
+    <string name="welcome_text">Welcome to AnkerWallet</string>
     <string name="create_wallet">Create a new wallet</string>
     <string name="restore_wallet">Restore a wallet</string>
     <string name="test_wallet">Test wallet</string>
@@ -105,7 +105,7 @@
     <!-- Wallet activity -->
     <string name="test_wallet_message">This is a test wallet, where you can send and receive testnet Bitcoins, Litecoin and Dogecoins.\n\nIf you want to use this wallet with real money please go to: <b>Settings &gt; Restore wallet &gt; Create a new wallet</b>.</string>
     <string name="wallet_update_title">New version available</string>
-    <string name="wallet_update_message">A new version of OpenWallet is available, and it contains all-new bugs and features!</string>
+    <string name="wallet_update_message">A new version of AnkerWallet is available, and it contains all-new bugs and features!</string>
     <string name="pay_with">Send with</string>
     <string name="exchange_and_pay_title">Exchange and send</string>
     <!-- PayToDialog-->
@@ -201,8 +201,8 @@
         <item quantity="other">%d seconds</item>
     </plurals>
     <!-- About Activity -->
-    <string name="title_activity_about">About OpenWallet</string>
-    <string name="app_name_long">OpenWallet for Android</string>
+    <string name="title_activity_about">About AnkerWallet</string>
+    <string name="app_name_long">AnkerWallet for Android</string>
     <string name="about_licence">An open source project\nhttps://gitlab.com/openwallet/openwallet-android</string>
     <string name="about_credits_nubits">Server infrastructure powered by your donations</string>
     <string name="about_credits_translations">Translations provided by:</string>
@@ -215,7 +215,7 @@
     <string name="about_credits_crypto_icons">Crypto-icons by Chris Shepherd\nhttps://github.com/shphrd/crypto-icons</string>
     <string name="about_credits_font_icons">Font-icons by Daniel Bruce\nhttp://www.entypo.com</string>
     <string name="about_credits_exchange_rates">Exchange rates provided by\nhttp://www.cryptocoincharts.info/\nhttps://bitcoinaverage.com/</string>
-    <string name="about_openwallet_copyright" translatable="false">\u00A9 2017 OpenWallet</string>
+    <string name="about_openwallet_copyright" translatable="false">\u00A9 2019 AnkerWallet</string>
     <!-- Add Coins -->
     <string name="title_activity_add_coins">Add coins</string>
     <!-- %1$s is the coin name e.g. ... create a Bitcoin account ... -->
@@ -368,11 +368,11 @@
     <string name="account_extended_private_key_label">Extended private key</string>
     <string name="account_private_key_warning">The private key allows you to send coins from this account. It is not necessary to backup this key as it is derived from your <i>recovery phrase</i></string>
     <!-- Support -->
-    <string name="support_message">Contact OpenWallet support</string>
+    <string name="support_message">Contact AnkerWallet support</string>
     <!-- Sweep wallet -->
     <!-- Sweep paper wallet means to redeem coins from a code usually printed on a paper -->
     <string name="title_activity_sweep_wallet">Sweep paper wallet</string>
-    <string name="sweep_wallet_info">You are about to transfer coins from a paper wallet to your OpenWallet.\nAfter the transfer is complete, please avoid reusing the paper wallet for security reasons.\n\nSupported formats: WIF, BIP38, miniature private keys.</string>
+    <string name="sweep_wallet_info">You are about to transfer coins from a paper wallet to your AnkerWallet.\nAfter the transfer is complete, please avoid reusing the paper wallet for security reasons.\n\nSupported formats: WIF, BIP38, miniature private keys.</string>
     <string name="sweep_wallet_key_title">Private key</string>
     <string name="sweep_wallet_key_password">Private key password</string>
     <string name="sweep_wallet_key_hint">Type or scan a private key</string>
@@ -403,9 +403,9 @@
     <string name="terms_of_service" translatable="false">LEGAL DISCLAIMER\n
 \n
 \n
-1. Risks related to the use of OpenWallet\n
+1. Risks related to the use of AnkerWallet\n
 \n
-OpenWallet will not be responsible for any losses, damages or claims arising from events falling within the scope of the following five categories:\n
+AnkerWallet will not be responsible for any losses, damages or claims arising from events falling within the scope of the following five categories:\n
 \n
 (1) Mistakes made by the user of any cryptocurrency-related software or service (e.g. forgotten passwords, payments sent to the wrong coin addresses, and accidental deletion of wallets).\n
 \n
@@ -430,7 +430,7 @@ Before you engage in transactions using an electronic system, you should careful
 \n
 4. Compliance with Tax Obligations\n
 \n
-The users of this wallet are responsible for determining what, if any, taxes apply to their cryptocurrency transactions. Contributors to OpenWallet know nothing of your particular jurisdiction\'s laws and regulations.\n
+The users of this wallet are responsible for determining what, if any, taxes apply to their cryptocurrency transactions. Contributors to AnkerWallet know nothing of your particular jurisdiction\'s laws and regulations.\n
 \n
 \n
 5. No Warranties\n
