@@ -224,6 +224,7 @@ public class Constants {
     public static final HashMap<CoinType, String> COINS_BLOCK_EXPLORERS;
     static {
         COINS_ICONS = new HashMap<>();
+        COINS_ICONS.put(CoinID.ANKCOIN_MAIN.getCoinType(), R.drawable.ankcoin);
         COINS_ICONS.put(CoinID.BITCOIN_MAIN.getCoinType(), R.drawable.bitcoin);
         COINS_ICONS.put(CoinID.BITCOIN_TEST.getCoinType(), R.drawable.bitcoin_test);
         COINS_ICONS.put(CoinID.DOGECOIN_MAIN.getCoinType(), R.drawable.dogecoin);
@@ -267,7 +268,6 @@ public class Constants {
         COINS_ICONS.put(CoinID.CLUBCOIN_MAIN.getCoinType(), R.drawable.clubcoin);
         COINS_ICONS.put(CoinID.RICHCOIN_MAIN.getCoinType(), R.drawable.richcoin);
         COINS_ICONS.put(CoinID.IXCOIN_MAIN.getCoinType(), R.drawable.ixcoin);
-        COINS_ICONS.put(CoinID.ANKCOIN_MAIN.getCoinType(), R.drawable.ankcoin);
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
@@ -322,6 +322,7 @@ public class Constants {
     );
 
     public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
+            AnkcoinMain.get(),
             BitcoinMain.get(),
 //            AsiacoinMain.get(),
 //            AuroracoinMain.get(),
@@ -342,7 +343,7 @@ public class Constants {
 //            GuldenMain.get(),
 //            IxcoinMain.get(),
 //            JumbucksMain.get(),
-            LitecoinMain.get(),
+            LitecoinMain.get()
 //            MonacoinMain.get(),
 //            NamecoinMain.get(),
 //            NeoscoinMain.get(),
@@ -364,6 +365,5 @@ public class Constants {
 //            BitcoinTest.get(),
 //            LitecoinTest.get(),
 //            DogecoinTest.get(),
-              AnkcoinMain.get()
     );
 }

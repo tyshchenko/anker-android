@@ -102,6 +102,13 @@ public class NavigationDrawerFragment extends Fragment {
             }
         });
 
+        view.findViewById(R.id.overview_coins).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                overviewCoins();
+            }
+        });
+		
         view.findViewById(R.id.add_coins).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -242,6 +249,12 @@ public class NavigationDrawerFragment extends Fragment {
         closeDrawer();
         if (listener != null) {
             listener.onAddCoinsSelected();
+        }
+    }
+    private void overviewCoins() {
+        closeDrawer();
+        if (listener != null) {
+            listener.onOverviewSelected();
         }
     }
 

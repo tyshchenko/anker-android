@@ -30,14 +30,6 @@ public class AboutActivity extends BaseWalletActivity {
             version.setVisibility(View.INVISIBLE);
         }
 
-        Fonts.setTypeface(findViewById(R.id.translation_globe), Fonts.Font.OPENWALLET_FONT_ICONS);
     }
 
-    @OnClick(R.id.terms_of_service_button)
-    void onTermsOfUseClick() {
-        new AlertDialog.Builder(this)
-                .setTitle(R.string.terms_of_service_title)
-                .setMessage(R.string.terms_of_service)
-                .setPositiveButton(R.string.button_ok, null).create().show();
-    }
 }

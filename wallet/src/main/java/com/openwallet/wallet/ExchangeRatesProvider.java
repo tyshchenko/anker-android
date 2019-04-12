@@ -352,6 +352,11 @@ public class ExchangeRatesProvider extends ContentProvider {
         final Map<String, ExchangeRate> rates = new TreeMap<String, ExchangeRate>();
         try {
             CoinType type = isLocalToCrypto ? null : CoinID.typeFromSymbol(fromSymbol);
+			if (isLocalToCrypto) {
+				//add one line COIN
+				JSONObject newANKExchangeRatesJson = requestExchangeRatesJson(new URL("https://validate.ankerid.com/api/ticker"));
+				json.put("ANK", String.valueOf(Float.valueOf(json.getString("USDT"))*Float.valueOf(newANKExchangeRatesJson.getString("ANK"))));
+			}
             for (final Iterator<String> i = json.keys(); i.hasNext(); ) {
                 final String toSymbol = i.next();
                 // Skip extras field
