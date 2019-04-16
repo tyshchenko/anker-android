@@ -6,6 +6,7 @@
     android:id="@+id/amount_layout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_centerInParent="false"
     android:orientation="vertical">
 
     <LinearLayout
@@ -22,6 +23,7 @@
             android:layout_height="wrap_content"
             android:includeFontPadding="false"
             android:lineSpacingMultiplier="0.9"
+            android:textColor="@color/white"
             tools:text="4200.30937785" />
 
         <!--<TextView-->
@@ -39,8 +41,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|end"
-        android:paddingLeft="2dp"
         android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:paddingLeft="2dp"
         tools:text="SYMBOL" />
 
 </LinearLayout>

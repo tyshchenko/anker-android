@@ -76,6 +76,8 @@ public class NavDrawerListAdapter extends BaseAdapter {
                 case ITEM_COIN:
                 case ITEM_OVERVIEW:
                 case ITEM_TRADE:
+				case ITEM_COLDTAK:
+				case ITEM_MASTERNODE:
                     row = new NavDrawerItemView(context);
                     break;
                 default:
@@ -94,6 +96,8 @@ public class NavDrawerListAdapter extends BaseAdapter {
             case ITEM_COIN:
             case ITEM_OVERVIEW:
             case ITEM_TRADE:
+			case ITEM_COLDTAK:
+			case ITEM_MASTERNODE:
                 ((NavDrawerItemView) row).setData(item.title, item.iconRes);
                 break;
         }

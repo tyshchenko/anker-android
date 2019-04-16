@@ -49,6 +49,8 @@ import static com.openwallet.wallet.ui.NavDrawerItemType.ITEM_COIN;
 import static com.openwallet.wallet.ui.NavDrawerItemType.ITEM_OVERVIEW;
 import static com.openwallet.wallet.ui.NavDrawerItemType.ITEM_SECTION_TITLE;
 import static com.openwallet.wallet.ui.NavDrawerItemType.ITEM_TRADE;
+import static com.openwallet.wallet.ui.NavDrawerItemType.ITEM_COLDTAK;
+import static com.openwallet.wallet.ui.NavDrawerItemType.ITEM_MASTERNODE;
 
 
 /**
@@ -219,6 +221,9 @@ final public class WalletActivity extends BaseWalletActivity implements
         navDrawerItems.clear();
         NavDrawerItem.addItem(navDrawerItems, ITEM_SECTION_TITLE, getString(R.string.navigation_drawer_services));
         NavDrawerItem.addItem(navDrawerItems, ITEM_TRADE, getString(R.string.title_activity_trade), R.drawable.trade, null);
+        NavDrawerItem.addItem(navDrawerItems, ITEM_SECTION_TITLE, getString(R.string.navigation_drawer_anker));
+        NavDrawerItem.addItem(navDrawerItems, ITEM_COLDTAK, getString(R.string.title_activity_coldstaking), R.drawable.staking, null);
+        NavDrawerItem.addItem(navDrawerItems, ITEM_MASTERNODE, getString(R.string.title_activity_masternode), R.drawable.masternodes, null);
         NavDrawerItem.addItem(navDrawerItems, ITEM_SECTION_TITLE, getString(R.string.navigation_drawer_wallet));
 //        NavDrawerItem.addItem(navDrawerItems, ITEM_OVERVIEW, getString(R.string.title_activity_overview), R.drawable.ic_launcher, null);
         for (WalletAccount account : getAllAccounts()) {

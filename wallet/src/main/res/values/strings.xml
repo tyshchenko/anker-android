@@ -283,6 +283,9 @@
     <string name="debugging_test_wallet_password_results">Unlocked wallet: %1$s\n\nFingerprints\nInput: %2$s\nKey: %3$s</string>
     <!-- Overview -->
     <string name="title_activity_overview">Overview</string>
+	<string name="navigation_drawer_anker">Anker Coin</string>
+	<string name="title_activity_coldstaking">Cold staking</string>
+	<string name="title_activity_masternode">Masternode</string>
     <!-- Exchange -->
     <string name="title_activity_trade">Exchange</string>
     <string name="trade_info">Select the coins you wish to exchange.\nThe converted coins will be automatically added to your wallet.</string>

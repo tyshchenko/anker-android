@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
     android:orientation="vertical">
 
     <LinearLayout
@@ -17,18 +18,21 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/amount_margin_top"
         android:paddingBottom="@dimen/amount_margin_bottom"
+        android:background="@drawable/overviewbkg"
         android:layout_gravity="center_horizontal">
 
         <com.openwallet.wallet.ui.widget.Amount
             android:id="@+id/account_exchanged_balance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             openwallet:single_line="true" />
 
         <com.openwallet.wallet.ui.widget.Amount
             android:id="@+id/account_balance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             openwallet:show_big="true"
             android:gravity="center_horizontal" />
     </LinearLayout>
