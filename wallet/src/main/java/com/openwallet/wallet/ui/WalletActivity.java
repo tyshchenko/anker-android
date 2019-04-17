@@ -299,6 +299,16 @@ final public class WalletActivity extends BaseWalletActivity implements
         openOverview(false);
     }
 
+    @Override
+    public void onColdstakSelected() {
+        startActivity(new Intent(WalletActivity.this, ColdstakActivity.class));
+    }
+
+    @Override
+    public void onMasternodeSelected() {
+        startActivity(new Intent(WalletActivity.this, MasternodeActivity.class));
+    }
+
     public void openOverview() {
         openOverview(true);
     }

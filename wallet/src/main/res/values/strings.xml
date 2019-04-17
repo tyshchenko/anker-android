@@ -286,6 +286,8 @@
 	<string name="navigation_drawer_anker">Anker Coin</string>
 	<string name="title_activity_coldstaking">Cold staking</string>
 	<string name="title_activity_masternode">Masternode</string>
+	<string name="title_activity_addmasternode">Add Masternode</string>
+	<string name="title_activity_addcoldstak">+ Cold Staking</string>
     <!-- Exchange -->
     <string name="title_activity_trade">Exchange</string>
     <string name="trade_info">Select the coins you wish to exchange.\nThe converted coins will be automatically added to your wallet.</string>

@@ -228,6 +228,12 @@ public class NavigationDrawerFragment extends Fragment {
                 case ITEM_TRADE:
                     listener.onTradeSelected();
                     break;
+                case ITEM_COLDTAK:
+                    listener.onColdstakSelected();
+                    break;
+                case ITEM_MASTERNODE:
+                    listener.onMasternodeSelected();
+                    break;
                 case ITEM_OVERVIEW:
                     listener.onOverviewSelected();
                     break;
@@ -328,6 +334,8 @@ public class NavigationDrawerFragment extends Fragment {
         void onAccountSelected(String accountId);
         void onAddCoinsSelected();
         void onTradeSelected();
+		void onColdstakSelected();
+		void onMasternodeSelected();
         void onOverviewSelected();
     }
 }

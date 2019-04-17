@@ -142,6 +142,22 @@
                 android:value="com.openwallet.wallet.ui.WalletActivity" />
         </activity>
         <activity
+            android:name="com.openwallet.wallet.ui.ColdstakActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.openwallet.wallet.ui.WalletActivity" />
+        </activity>
+        <activity
+            android:name="com.openwallet.wallet.ui.MasternodeActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.openwallet.wallet.ui.WalletActivity" />
+        </activity>
+        <activity
             android:name="com.openwallet.wallet.ui.AddCoinsActivity"
             android:label="@string/title_activity_add_coins"
             android:theme="@style/AppTheme" >
