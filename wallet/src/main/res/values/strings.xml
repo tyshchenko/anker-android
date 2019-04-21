@@ -284,10 +284,16 @@
     <!-- Overview -->
     <string name="title_activity_overview">Overview</string>
 	<string name="navigation_drawer_anker">Anker Coin</string>
-	<string name="title_activity_coldstaking">Cold staking</string>
-	<string name="title_activity_masternode">Masternode</string>
+	<string name="title_activity_coldstaking">AnkerSavings</string>
+	<string name="title_activity_masternode">AnkerNodes</string>
 	<string name="title_activity_addmasternode">Add Masternode</string>
 	<string name="title_activity_addcoldstak">+ Cold Staking</string>
+    <!-- staking -->
+    <string name="coldstak_add_title">Create New Cold staking</string>
+    <string name="coldstak_add">For add new cold staking you must hold 1000ANK for 3 months</string>
+    <!-- masternode -->
+    <string name="masternode_add_title">Create New masternode</string>
+    <string name="masternode_add">For add new masternode you must hold 4000ANK</string>
     <!-- Exchange -->
     <string name="title_activity_trade">Exchange</string>
     <string name="trade_info">Select the coins you wish to exchange.\nThe converted coins will be automatically added to your wallet.</string>

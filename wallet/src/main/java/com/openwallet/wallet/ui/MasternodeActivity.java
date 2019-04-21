@@ -25,4 +25,12 @@ public class MasternodeActivity extends BaseWalletActivity {
 
     }
 
+    public void onClick(View v) {
+        new AlertDialog.Builder(this)
+                .setTitle(getString(R.string.masternode_add_title))
+                .setMessage(R.string.masternode_add)
+                .setPositiveButton(R.string.button_ok, null)
+                .create().show();
+    }
+
 }

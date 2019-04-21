@@ -27,8 +27,8 @@ public class ColdstakActivity extends BaseWalletActivity {
 
     public void onClick(View v) {
         new AlertDialog.Builder(this)
-                .setTitle(getString(R.string.coin_already_added_title))
-                .setMessage(R.string.coin_already_added)
+                .setTitle(getString(R.string.coldstak_add_title))
+                .setMessage(R.string.coldstak_add)
                 .setPositiveButton(R.string.button_ok, null)
                 .create().show();
     }
