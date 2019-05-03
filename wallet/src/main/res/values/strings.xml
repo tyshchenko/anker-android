@@ -286,14 +286,21 @@
 	<string name="navigation_drawer_anker">Anker Coin</string>
 	<string name="title_activity_coldstaking">AnkerSavings</string>
 	<string name="title_activity_masternode">AnkerNodes</string>
-	<string name="title_activity_addmasternode">Add Masternode</string>
-	<string name="title_activity_addcoldstak">+ Cold Staking</string>
+	<string name="title_activity_addmasternode">Add AnkerNode</string>
+	<string name="title_activity_addcoldstak">+ AnkerSavings</string>
     <!-- staking -->
-    <string name="coldstak_add_title">Create New Cold staking</string>
-    <string name="coldstak_add">For add new cold staking you must hold 1000ANK for 3 months</string>
+    <string name="not_haveank_title">Add ANK Wallet</string>
+    <string name="not_haveank">You should add ANK wallet first!</string>
+
+    <string name="coldstak_not1000_title">Insufficient funds</string>
+    <string name="coldstak_not1000">You require 1000 ANK for savings account!</string>
+    <string name="coldstak_add_title">Create New AnkerSavings</string>
+    <string name="coldstak_add">For add new AnkerSavings you must hold 1000ANK for 3 months</string>
+    <string name="coldstak_ok_title">AnkerSavings Created</string>
+    <string name="coldstak_ok">You hold 1000ANK for 3 months</string>
     <!-- masternode -->
-    <string name="masternode_add_title">Create New masternode</string>
-    <string name="masternode_add">For add new masternode you must hold 4000ANK</string>
+    <string name="masternode_add_title">Create New AnkerNode</string>
+    <string name="masternode_add">For add new AnkerNode you must hold 4000ANK</string>
     <!-- Exchange -->
     <string name="title_activity_trade">Exchange</string>
     <string name="trade_info">Select the coins you wish to exchange.\nThe converted coins will be automatically added to your wallet.</string>
