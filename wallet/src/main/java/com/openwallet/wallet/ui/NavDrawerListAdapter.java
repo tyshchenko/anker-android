@@ -78,7 +78,7 @@ public class NavDrawerListAdapter extends BaseAdapter {
                 case ITEM_TRADE:
 				case ITEM_COLDTAK:
 				case ITEM_MASTERNODE:
-                    row = new NavDrawerItemView(context);
+                    row = new NavDrawerItemView(context, true);
                     break;
                 default:
                     throw new RuntimeException("Unknown type: " + item.itemType);

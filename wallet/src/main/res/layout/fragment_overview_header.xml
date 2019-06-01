@@ -22,13 +22,13 @@
         android:adjustViewBounds ="true"
         android:background="@drawable/overviewbkg">
 
-        <com.openwallet.wallet.ui.widget.Amount
+        <com.openwallet.wallet.ui.widget.AmountBig
             android:id="@+id/account_balance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/amount_margin_bottom"
-            android:layout_marginTop="@dimen/amount_margin_top"
+            android:layout_marginTop="36dp"
             android:gravity="center_horizontal"
             openwallet:show_big="true" />
     </LinearLayout>

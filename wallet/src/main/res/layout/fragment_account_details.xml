@@ -66,7 +66,8 @@
                         android:layout_width="@dimen/qr_code_size"
                         android:layout_height="@dimen/qr_code_size"
                         tools:background="@color/gray_87_text"
-                        android:background="@color/qr_code_normal_bg"
+                        android:background="@drawable/qrbackground"
+                        android:padding="20dp"
                         android:layout_margin="@dimen/qr_code_margin" />
 
                 </LinearLayout>

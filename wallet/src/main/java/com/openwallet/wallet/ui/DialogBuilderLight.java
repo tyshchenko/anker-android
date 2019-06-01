@@ -35,21 +35,21 @@ import javax.annotation.Nullable;
  * @author Andreas Schildbach
  * @author John L. Jegutanis
  */
-public class DialogBuilder extends AlertDialog.Builder {
+public class DialogBuilderLight extends AlertDialog.Builder {
     private final View customTitle;
     private final ImageView iconView;
     private final TextView titleView;
 
-    public static DialogBuilder warn(final Context context, final int titleResId) {
-        final DialogBuilder builder = new DialogBuilder(context);
+    public static DialogBuilderLight warn(final Context context, final int titleResId) {
+        final DialogBuilderLight builder = new DialogBuilderLight(context);
 //        builder.setIcon(R.drawable.ic_menu_warning);
         builder.setTitle(titleResId);
         return builder;
     }
 
-    public DialogBuilder(final Context context) {
+    public DialogBuilderLight(final Context context) {
 
-        super(new ContextThemeWrapper(context, R.style.Dialog));
+        super(new ContextThemeWrapper(context, R.style.DialogLight));
 
         this.customTitle = LayoutInflater.from(context).inflate(R.layout.dialog_title, null);
         this.iconView = (ImageView) customTitle.findViewById(android.R.id.icon);
@@ -59,7 +59,7 @@ public class DialogBuilder extends AlertDialog.Builder {
 
 
     @Override
-    public DialogBuilder setIcon(final Drawable icon) {
+    public DialogBuilderLight setIcon(final Drawable icon) {
         if (icon != null) {
             setCustomTitle(customTitle);
             iconView.setImageDrawable(icon);
@@ -70,7 +70,7 @@ public class DialogBuilder extends AlertDialog.Builder {
     }
 
     @Override
-    public DialogBuilder setIcon(final int iconResId) {
+    public DialogBuilderLight setIcon(final int iconResId) {
         if (iconResId != 0) {
             setCustomTitle(customTitle);
             iconView.setImageResource(iconResId);
@@ -81,7 +81,7 @@ public class DialogBuilder extends AlertDialog.Builder {
     }
 
     @Override
-    public DialogBuilder setTitle(final CharSequence title) {
+    public DialogBuilderLight setTitle(final CharSequence title) {
         if (title != null) {
             setCustomTitle(customTitle);
             titleView.setText(title);
@@ -91,7 +91,7 @@ public class DialogBuilder extends AlertDialog.Builder {
     }
 
     @Override
-    public DialogBuilder setTitle(final int titleResId) {
+    public DialogBuilderLight setTitle(final int titleResId) {
         if (titleResId != 0) {
             setCustomTitle(customTitle);
             titleView.setText(titleResId);
@@ -101,20 +101,20 @@ public class DialogBuilder extends AlertDialog.Builder {
     }
 
     @Override
-    public DialogBuilder setMessage(final CharSequence message) {
+    public DialogBuilderLight setMessage(final CharSequence message) {
         super.setMessage(message);
 
         return this;
     }
 
     @Override
-    public DialogBuilder setMessage(final int messageResId) {
+    public DialogBuilderLight setMessage(final int messageResId) {
         super.setMessage(messageResId);
 
         return this;
     }
 
-    public DialogBuilder singleDismissButton(@Nullable final OnClickListener dismissListener) {
+    public DialogBuilderLight singleDismissButton(@Nullable final OnClickListener dismissListener) {
         setNeutralButton(R.string.button_dismiss, dismissListener);
 
         return this;

@@ -242,7 +242,7 @@
     <!-- Exchange -->
     <string name="title_activity_trade">Ανταλλακτήριο</string>
     <string name="trade_info">Επιλέξτε τα νομίσματα που επιθυμείτε να αλλάξετε.\nΤα νομίσματα θα προστεθούν αυτόματα στο πορτοφόλι σας μετά την μετατροπή.</string>
-    <string name="trade_info_rates">Η ισοτιμία εμπεριέχει έξοδα συναλλαγής της ShapeShift.io</string>
+    <string name="trade_info_rates">Η ισοτιμία εμπεριέχει έξοδα συναλλαγής της AnkerPay</string>
     <string name="trade_from_coin_label">αποστολή</string>
     <string name="trade_to_coin_label">λήψη</string>
     <string name="trade_warn_no_account_found">Θα παραπεμφθείτε να προσθέσετε ένα %1$s πορτοφόλι</string>
@@ -278,8 +278,8 @@
     <string name="title_activity_exchange_history">Ιστορικό συναλλαγών</string>
     <string name="exchange_history_empty">Δεν έχουν πραγματοποιηθεί μετατροπές νομισμάτων</string>
     <!-- ShapeShift -->
-    <string name="about_shapeshift_title">Σχετικά με την ShapeShift.io</string>
-    <string name="about_shapeshift_message">Η ShapeShift.io είναι ένα ανταλλακτήριο στιγμιαίας μετατροπής Bitcoin και άλλων νομισμάτων. Η πλατφόρμα (διαθέσιμη μέσω της ιστοσελίδας και του API) αντιπροσωπεύει τον πιο γρήγορο και αποδοτικό τρόπο για να μετατρέψετε μεταξύ Bitcoin και δεκάδων άλλων νομισμάτων. Δεν απαιτείται δημιουργία λογαριασμού.</string>
+    <string name="about_shapeshift_title">Σχετικά με την AnkerPay.com</string>
+    <string name="about_shapeshift_message">Η AnkerPay.com είναι ένα ανταλλακτήριο στιγμιαίας μετατροπής Bitcoin και άλλων νομισμάτων. Η πλατφόρμα (διαθέσιμη μέσω της ιστοσελίδας και του API) αντιπροσωπεύει τον πιο γρήγορο και αποδοτικό τρόπο για να μετατρέψετε μεταξύ Bitcoin και δεκάδων άλλων νομισμάτων. Δεν απαιτείται δημιουργία λογαριασμού.</string>
     <!-- Sign Message -->
     <string name="title_activity_sign_verify_message">Υπογραφή/επαλήθευση μηνύματος</string>
     <string name="signing_info">Μπορείτε να υπογράψετε ή να επαληθεύσετε ένα μήνυμα χρησιμοποιώντας μία διεύθυνση</string>

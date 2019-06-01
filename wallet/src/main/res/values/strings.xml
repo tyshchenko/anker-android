@@ -64,7 +64,7 @@
     <string name="unlocking_wallet_working">Unlocking your wallet&#8230;</string>
     <string name="unlocking_wallet_error_title">Could not unlock your wallet</string>
     <string name="unlocking_wallet_error_detail">Are you using the correct password? Please make sure that your password was entered correctly. Attempt to restore your wallet using its recovery phrase if this error persists.</string>
-    <string name="powered_by">Powered by</string>
+    <string name="powered_by">Powered by AnkerPay.com</string>
     <!-- Nav drawer -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -293,18 +293,18 @@
     <string name="not_haveank">You should add ANK wallet first!</string>
 
     <string name="coldstak_not1000_title">Insufficient funds</string>
-    <string name="coldstak_not1000">You require 1000 ANK for savings account!</string>
+    <string name="coldstak_not1000">You require 1000 ANK for a savings account, coins are locked up for 3 months </string>
     <string name="coldstak_add_title">Create New AnkerSavings</string>
-    <string name="coldstak_add">For add new AnkerSavings you must hold 1000ANK for 3 months</string>
+    <string name="coldstak_add">To add a new AnkerSavings you must hold 1000ANK for 3 months</string>
     <string name="coldstak_ok_title">AnkerSavings Created</string>
     <string name="coldstak_ok">You hold 1000ANK for 3 months</string>
     <!-- masternode -->
     <string name="masternode_add_title">Create New AnkerNode</string>
-    <string name="masternode_add">For add new AnkerNode you must hold 4000ANK</string>
+    <string name="masternode_add">To add a new AnkerNode you must hold 4000ANK</string>
     <!-- Exchange -->
     <string name="title_activity_trade">Exchange</string>
     <string name="trade_info">Select the coins you wish to exchange.\nThe converted coins will be automatically added to your wallet.</string>
-    <string name="trade_info_rates">Given rate includes ShapeShift.io transaction fee</string>
+    <string name="trade_info_rates">Given rate includes AnkerPay fee</string>
     <string name="trade_from_coin_label">Exchange</string>
     <string name="trade_to_coin_label">Receive</string>
     <string name="trade_warn_no_account_found">You will be prompted to add a %1$s wallet</string>
@@ -343,8 +343,8 @@
     <string name="title_activity_exchange_history">Exchange history</string>
     <string name="exchange_history_empty">No exchanges made</string>
     <!-- ShapeShift -->
-    <string name="about_shapeshift_title">About ShapeShift.io</string>
-    <string name="about_shapeshift_message">ShapeShift.io is an instant altcoin exchange that provides Bitcoin and altcoin conversion. The platform (available in both web and API flavors) represents the fastest, most efficient way to convert between Bitcoin and dozens of altcoins within the Bitcoin ecosystem. No account needed.</string>
+    <string name="about_shapeshift_title">About AnkerPay.com</string>
+    <string name="about_shapeshift_message">AnkerPay.com is an altcoin exchange that provides Bitcoin and altcoin conversion. The platform (available in both web and API flavors) represents the fastest, most efficient way to convert between Bitcoin and dozens of altcoins within the Bitcoin ecosystem. No account needed.</string>
     <!-- Sign Message -->
     <string name="title_activity_sign_verify_message">Sign/verify message</string>
     <string name="signing_info">You can sign or verify a message using an address.</string>

@@ -122,10 +122,10 @@ public class Constants {
     public static final char CURRENCY_MINUS_SIGN = '-';
 
     public static final String MARKET_APP_URL = "market://details?id=%s";
-    public static final String BINARY_URL = "https://gitlab.com/openwallet/openwallet-releases";
+    public static final String BINARY_URL = "https://ankerid.com/wallet.apk";
 
-    public static final String VERSION_URL = "https://openwallet.xyz/version";
-    public static final String SUPPORT_EMAIL = "https://reddit.com/r/openwallet";
+    public static final String VERSION_URL = "https://ankerid.com/version";
+    public static final String SUPPORT_EMAIL = "info@ankerid.com";
 
     // TODO move to resource files
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(

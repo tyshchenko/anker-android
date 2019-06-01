@@ -12,13 +12,14 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:choiceMode="singleChoice"
+        android:background="@color/darkdark"
         android:divider="@android:color/transparent"
         android:dividerHeight="0dp" />
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="@color/darkdark">
 
         <Button
             android:id="@+id/overview_coins"
@@ -32,7 +33,8 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/darkdark">
 
         <Button
             android:id="@+id/add_coins"

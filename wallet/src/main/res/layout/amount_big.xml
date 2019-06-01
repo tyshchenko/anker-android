@@ -37,12 +37,12 @@
 
     <TextView
         android:id="@+id/symbol"
-        style="@style/AmountSymbol"
+        style="@style/AmountBSymbol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|end"
         android:includeFontPadding="false"
-        android:textColor="@color/gray"
+        android:textColor="@color/white"
         android:paddingLeft="2dp"
         tools:text="SYMBOL" />
 

@@ -23,10 +23,13 @@ public class NavDrawerItemView extends LinearLayout implements Checkable {
 
     private boolean isChecked = false;
 
-    public NavDrawerItemView(Context context) {
+    public NavDrawerItemView(Context context, Boolean theme) {
         super(context);
-
-        view = LayoutInflater.from(context).inflate(R.layout.nav_drawer_item, this, true);
+        if (theme) {
+            view = LayoutInflater.from(context).inflate(R.layout.nav_drawer_item, this, true);
+        } else {
+            view = LayoutInflater.from(context).inflate(R.layout.nav_drawer_item_n, this, true);
+        }
         title = (TextView) findViewById(R.id.item_text);
         icon = (ImageView) findViewById(R.id.item_icon);
     }
@@ -41,7 +44,8 @@ public class NavDrawerItemView extends LinearLayout implements Checkable {
         isChecked = checked;
 
         if (isChecked) {
-            view.setBackgroundResource(R.color.primary_100);
+//            view.setBackgroundResource(R.color.primary_100);
+            view.setBackgroundResource(0);
         } else {
             view.setBackgroundResource(0);
         }

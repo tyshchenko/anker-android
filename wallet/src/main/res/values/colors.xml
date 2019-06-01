@@ -17,11 +17,16 @@
     <color name="white">#FFFFFF</color>
     <color name="white_almost">#F3F3F3</color>
     <color name="dark">#373734</color>
+    <color name="gray">#ffd8d8e0</color>
+    <color name="darkbkg">#2f2f3b</color>
+    <color name="whiteblue">#41a6fb</color>
+    <color name="darkdark">#242431</color>
+    <color name="darkbutton">#393944</color>
 
-    <color name="gray_87_text">#dd000000</color>
-    <color name="gray_54_sec_text_icons">#89000000</color>
-    <color name="gray_26_hint_text">#42000000</color>
-    <color name="gray_12_dividers">#1e000000</color>
+    <color name="gray_87_text">#F3F3F3</color>
+    <color name="gray_54_sec_text_icons">#F3F3F3</color>
+    <color name="gray_26_hint_text">#F3F3F3</color>
+    <color name="gray_12_dividers">#F3F3F3</color>
 
     <color name="send_color_fg">@color/send_normal</color>
     <color name="receive_color_fg">@color/receive_normal</color>
@@ -32,10 +37,10 @@
     <color name="address_bg_used">@color/receive_color_bg</color>
 
     <color name="actionbar_fg">@color/white_almost</color>
-    <color name="actionbar_bg">@color/primary_500</color>
+    <color name="actionbar_bg">#2f2f3b</color>
 
-    <color name="navigation_drawer_bg">#F0FFFFFF</color>
-    <color name="navigation_drawer_add_coins_bg">#A0FFFFFF</color>
+    <color name="navigation_drawer_bg">@color/dark</color>
+    <color name="navigation_drawer_add_coins_bg">@color/dark</color>
 
     <!-- Font icons -->
     <color name="font_icon_fg_color">@color/white_almost</color>
@@ -50,13 +55,13 @@
     <color name="fg_ok">#ff6db10c</color>
 
     <!-- background -->
-    <color name="bg_bright">#ffffffff</color>
-    <color name="bg_less_bright">#ffe8e8f0</color>
-    <color name="bg_panel">#ffd8d8e0</color>
-    <color name="bg_form">#ffe8e8f0</color>
-    <color name="bg_list">#40ffffff</color>
-    <color name="bg_list_selected">#40808090</color>
-    <color name="bg_dialog_title">#ffb8b8b0</color>
+    <color name="bg_bright">@color/dark</color>
+    <color name="bg_less_bright">@color/dark</color>
+    <color name="bg_panel">@color/dark</color>
+    <color name="bg_form">@color/dark</color>
+    <color name="bg_list">@color/dark</color>
+    <color name="bg_list_selected">@color/darkdark</color>
+    <color name="bg_dialog_title">@color/dark</color>
 
     <!-- scanner -->
     <color name="scan_mask">#60000000</color>
@@ -71,6 +76,6 @@
     <color name="progress_bar_color_4">#AED581</color>
 
     <!-- QR code -->
-    <color name="qr_code_normal_bg">#00000000</color>
+    <color name="qr_code_normal_bg">#ffffff</color>
 
 </resources>

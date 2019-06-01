@@ -24,11 +24,10 @@
     <CheckBoxPreference
         android:key="manual_receiving_addresses"
         android:title="@string/pref_title_manual_receiving_addresses"
-        android:summary="@string/pref_summary_manual_receiving_addresses"
+        android:textColor="@color/white"
+        android:color="#ffffff"
+
+        android:textColorHint="@color/white"
         android:defaultValue="false"/>
 
-    <Preference android:title="@string/title_activity_debugging" >
-        <intent android:targetPackage="@string/app_package"
-            android:targetClass="com.openwallet.wallet.ui.DebuggingActivity" />
-    </Preference>
 </PreferenceScreen>

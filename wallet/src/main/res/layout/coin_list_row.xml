@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
+    style="@style/BorderlessPanel"
     android:orientation="horizontal"
     android:paddingTop="@dimen/quarter_standard_margin"
     android:paddingBottom="@dimen/quarter_standard_margin"

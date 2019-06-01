@@ -156,7 +156,7 @@ public class AvailableAccountsAdaptor extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            convertView = new NavDrawerItemView(context);
+            convertView = new NavDrawerItemView(context,false);
         }
 
         final Entry entry = getItem(position);

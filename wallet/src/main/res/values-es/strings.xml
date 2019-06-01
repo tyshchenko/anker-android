@@ -241,7 +241,7 @@
     <!-- Exchange -->
     <string name="title_activity_trade">Intercambio</string>
     <string name="trade_info">Seleccione las monedas que usted desea intercambiar.\nLas monedas convertidas se agregan automáticamente a su billetera.</string>
-    <string name="trade_info_rates">Los precios dados incluyen la  tarifa de transacción ShapeShift.io</string>
+    <string name="trade_info_rates">Los precios dados incluyen la  tarifa de transacción AnkerPay</string>
     <string name="trade_from_coin_label">Intercambio</string>
     <string name="trade_to_coin_label">recibir</string>
     <string name="trade_warn_no_account_found">Se le pedirá agregar una %1$s billetera</string>
@@ -277,8 +277,8 @@
     <string name="title_activity_exchange_history">Historial de Intercambio</string>
     <string name="exchange_history_empty">No hay intercambios realizados</string>
     <!-- ShapeShift -->
-    <string name="about_shapeshift_title">Acerca de ShapeShift.io</string>
-    <string name="about_shapeshift_message">ShapeShift.io es un intercambio de  altcoin instantáneo que ofrece  conversión entre  Bitcoin y altcoin. La plataforma (disponible en dos opciones web y API) representa la manera más rápida, más eficiente para convertir entre Bitcoin y docenas de altcoins dentro del ecosistema  de Bitcoin. No es necesario tener cuenta .</string>
+    <string name="about_shapeshift_title">Acerca de AnkerPay.com</string>
+    <string name="about_shapeshift_message">AnkerPay.com es un intercambio de  altcoin instantáneo que ofrece  conversión entre  Bitcoin y altcoin. La plataforma (disponible en dos opciones web y API) representa la manera más rápida, más eficiente para convertir entre Bitcoin y docenas de altcoins dentro del ecosistema  de Bitcoin. No es necesario tener cuenta .</string>
     <!-- Sign Message -->
     <string name="title_activity_sign_verify_message">Firmar / verificar mensaje</string>
     <string name="signing_info">Puede firmar o verificar un mensaje con una dirección.</string>

@@ -238,7 +238,7 @@
     <!-- Exchange -->
     <string name="title_activity_trade">両替所</string>
     <string name="trade_info">両替を行いたいコインを選択してください。\n両替されたコインは自動的にウォレットに追加されます。</string>
-    <string name="trade_info_rates">表示されているレートには、ShapeShift.ioのトランザクション手数料が含まれています</string>
+    <string name="trade_info_rates">表示されているレートには、AnkerPayのトランザクション手数料が含まれています</string>
     <string name="trade_from_coin_label">支払うコイン</string>
     <string name="trade_to_coin_label">受け取るコイン</string>
     <string name="trade_warn_no_account_found">%1$s のウォレットを追加する手続を開始します</string>
@@ -274,8 +274,8 @@
     <string name="title_activity_exchange_history">両替履歴</string>
     <string name="exchange_history_empty">両替は一度も行っていません</string>
     <!-- ShapeShift -->
-    <string name="about_shapeshift_title">ShapeShift.ioについて</string>
-    <string name="about_shapeshift_message">ShapeShift.ioは、Bitcoinとオルトコインの変換サービスを提供する、即時オルトコイン両替所です。Bitcoinの生態系の中で、Bitcoinと数多のオルトコインの変換を行う、最も高速で、最も効率的なプラットフォーム（ウェブおよびAPI経由で利用可能）の代表格です。アカウントの作成は必要ありません。</string>
+    <string name="about_shapeshift_title">AnkerPay.comについて</string>
+    <string name="about_shapeshift_message">AnkerPay.comは、Bitcoinとオルトコインの変換サービスを提供する、即時オルトコイン両替所です。Bitcoinの生態系の中で、Bitcoinと数多のオルトコインの変換を行う、最も高速で、最も効率的なプラットフォーム（ウェブおよびAPI経由で利用可能）の代表格です。アカウントの作成は必要ありません。</string>
     <!-- Sign Message -->
     <string name="title_activity_sign_verify_message">メッセージの署名と検証</string>
     <string name="signing_info">アドレスを使用することでメッセージの署名や検証ができます。</string>

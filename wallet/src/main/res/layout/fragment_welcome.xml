@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/darkdark"
     tools:context="com.openwallet.wallet.ui.WelcomeFragment">
 
     <LinearLayout
@@ -25,6 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0"
+            android:textColor="@color/white"
             android:gravity="center_vertical|center_horizontal"
             android:text="@string/welcome_text"
             android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -42,6 +44,7 @@
                 android:layout_width="@dimen/intro_button_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                style="@style/BorderlessButtonLink"
                 android:text="@string/create_wallet" />
 
             <Button
@@ -49,6 +52,7 @@
                 android:layout_width="@dimen/intro_button_width"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                style="@style/BorderlessButtonLink"
                 android:text="@string/restore_wallet" />
         </LinearLayout>
     </LinearLayout>

@@ -28,7 +28,7 @@ import com.openwallet.wallet.ExchangeRatesProvider.ExchangeRate;
 import com.openwallet.wallet.R;
 import com.openwallet.wallet.WalletApplication;
 import com.openwallet.wallet.ui.adaptors.AccountListAdapter;
-import com.openwallet.wallet.ui.widget.Amount;
+import com.openwallet.wallet.ui.widget.AmountBig;
 import com.openwallet.wallet.ui.widget.SwipeRefreshLayout;
 import com.openwallet.wallet.util.ThrottlingWalletChangeListener;
 import com.openwallet.wallet.util.UiUtils;
@@ -95,7 +95,7 @@ public class OverviewFragment extends Fragment{
 
     @Bind(R.id.swipeContainer) SwipeRefreshLayout swipeContainer;
     @Bind(R.id.account_rows) ListView accountRows;
-    @Bind(R.id.account_balance) Amount mainAmount;
+    @Bind(R.id.account_balance) AmountBig mainAmount;
 
     private Listener listener;
 
@@ -349,6 +349,7 @@ public class OverviewFragment extends Fragment{
         } else {
             mainAmount.setAmount("-.--");
             mainAmount.setSymbol("");
+
         }
 
         swipeContainer.setRefreshing(wallet.isLoading());

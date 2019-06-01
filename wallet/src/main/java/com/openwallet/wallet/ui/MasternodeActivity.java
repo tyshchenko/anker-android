@@ -2,6 +2,7 @@ package com.openwallet.wallet.ui;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
@@ -26,7 +27,13 @@ public class MasternodeActivity extends BaseWalletActivity {
     }
 
     public void onClick(View v) {
-        new AlertDialog.Builder(this)
+//        LayoutInflater inflater = this.getLayoutInflater();
+//        View dialogView = inflater.inflate(R.layout.masternode_add, null);
+
+// now set layout to dialog
+//        dialogBuilder.setView(dialogView);
+
+        new DialogBuilderLight(this)
                 .setTitle(getString(R.string.masternode_add_title))
                 .setMessage(R.string.masternode_add)
                 .setPositiveButton(R.string.button_ok, null)

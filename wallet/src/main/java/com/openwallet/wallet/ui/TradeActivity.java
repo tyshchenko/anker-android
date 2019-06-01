@@ -68,7 +68,7 @@ public class TradeActivity extends BaseWalletActivity implements
             getSupportFragmentManager().popBackStack();
             // Ignore wallet decryption errors
             if (!(error instanceof KeyCrypterException)) {
-                DialogBuilder builder = DialogBuilder.warn(this, R.string.trade_error);
+                DialogBuilderLight builder = DialogBuilderLight.warn(this, R.string.trade_error);
                 builder.setMessage(getString(R.string.trade_error_sign_tx_message, error.getMessage()));
                 builder.setPositiveButton(R.string.button_ok, null)
                         .create().show();

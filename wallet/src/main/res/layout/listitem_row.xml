@@ -3,9 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    style="@style/BorderlessPanel"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/quarter_standard_margin"
+    android:paddingBottom="@dimen/quarter_standard_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin" >
 
-    <ImageView
+
+<ImageView
         android:id="@+id/imageView1ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,6 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -33,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:textColor="@color/white"
             android:textSize="18sp" />
     </LinearLayout>
 </LinearLayout>

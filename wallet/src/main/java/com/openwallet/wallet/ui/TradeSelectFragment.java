@@ -468,12 +468,12 @@ public class TradeSelectFragment extends Fragment implements ExchangeCheckSuppor
             return;
         }
 
-        DialogBuilder builder;
+        DialogBuilderLight builder;
         if (error == null) {
-            builder = DialogBuilder.warn(getActivity(), R.string.trade_warn_no_connection_title);
+            builder = DialogBuilderLight.warn(getActivity(), R.string.trade_warn_no_connection_title);
             builder.setMessage(R.string.trade_warn_no_connection_message);
         } else {
-            builder = DialogBuilder.warn(getActivity(), R.string.trade_error);
+            builder = DialogBuilderLight.warn(getActivity(), R.string.trade_error);
             builder.setMessage(R.string.trade_error_service_not_available);
         }
 

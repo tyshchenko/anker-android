@@ -46,6 +46,7 @@ public class ShowSeedFragment extends Fragment {
     private View seedLayout;
     private View seedEncryptedLayout;
     private TextView seedView;
+    private TextView xprivatekey_key;
     private View seedPasswordProtectedView;
     private ImageView qrView;
     private Listener listener;
@@ -54,6 +55,7 @@ public class ShowSeedFragment extends Fragment {
     private Wallet wallet;
     private CharSequence password;
     private SeedInfo seedInfo;
+    String serialized_xpriv;
 
     private final Handler handler = new MyHandler(this);
 
@@ -100,6 +102,7 @@ public class ShowSeedFragment extends Fragment {
         // Hide layout as maybe we have to show the password dialog
         seedLayout.setVisibility(View.GONE);
         seedView = (TextView) view.findViewById(R.id.seed);
+        xprivatekey_key = (TextView) view.findViewById(R.id.xprivatekey_key);
         seedPasswordProtectedView = view.findViewById(R.id.seed_password_protected);
         Fonts.setTypeface(view.findViewById(R.id.seed_password_protected_lock), Fonts.Font.OPENWALLET_FONT_ICONS);
         qrView = (ImageView) view.findViewById(R.id.qr_code_seed);
@@ -146,6 +149,7 @@ public class ShowSeedFragment extends Fragment {
             seedLayout.setVisibility(View.VISIBLE);
             seedEncryptedLayout.setVisibility(View.GONE);
             seedView.setText(seedInfo.seedString);
+            xprivatekey_key.setText(serialized_xpriv);
             QrUtils.setQr(qrView, getResources(), seedInfo.seedString);
             if (seedInfo.isSeedPasswordProtected) {
                 seedPasswordProtectedView.setVisibility(View.VISIBLE);
@@ -208,9 +212,9 @@ public class ShowSeedFragment extends Fragment {
                     log.warn("Failed recovering seed.");
                 }
             }
-
             if (seed != null && masterKey != null) {
                 seedInfo = new SeedInfo();
+                serialized_xpriv = masterKey.serializePrivB58();
                 seedInfo.seedString = Wallet.mnemonicToString(seed.getMnemonicCode());
                 DeterministicKey testMasterKey = HDKeyDerivation.createMasterPrivateKey(seed.getSeedBytes());
                 seedInfo.isSeedPasswordProtected = !masterKey.getPrivKey().equals(testMasterKey.getPrivKey());

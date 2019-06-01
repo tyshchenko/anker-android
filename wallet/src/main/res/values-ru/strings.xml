@@ -247,7 +247,7 @@
     <!-- Exchange -->
     <string name="title_activity_trade">Обменять</string>
     <string name="trade_info">Выберите валюту которую желаете обменять.\nПосле обмена валюта автоматически добавится в Ваш кошелёк.</string>
-    <string name="trade_info_rates">Предоставленный курс включает в себя налоги на транзакцию ShapeShift.io</string>
+    <string name="trade_info_rates">Предоставленный курс включает в себя налоги на транзакцию AnkerPay</string>
     <string name="trade_from_coin_label">обменять</string>
     <string name="trade_to_coin_label">получить</string>
     <string name="trade_warn_no_account_found">Вам будет предложено добавить %1$s кошелёк</string>
@@ -283,8 +283,8 @@
     <string name="title_activity_exchange_history">История обменов</string>
     <string name="exchange_history_empty">Обмен валюты еще не производился</string>
     <!-- ShapeShift -->
-    <string name="about_shapeshift_title">О ShapeShift.io</string>
-    <string name="about_shapeshift_message">ShapeShift.io это сервис, обеспечивающий  моментальный обмен между Bitcoin и другими криптовалютами. Платформа (доступна в браузерной и API версиях) предоставляет самый быстрый и эффективный метод обмена между Bitcoin и множеством альтернативных криптовалют. Аккаунт не требуется.</string>
+    <string name="about_shapeshift_title">О AnkerPay.com</string>
+    <string name="about_shapeshift_message">AnkerPay.com это сервис, обеспечивающий  моментальный обмен между Bitcoin и другими криптовалютами. Платформа (доступна в браузерной и API версиях) предоставляет самый быстрый и эффективный метод обмена между Bitcoin и множеством альтернативных криптовалют. Аккаунт не требуется.</string>
     <!-- Sign Message -->
     <string name="title_activity_sign_verify_message">Подписать/проверить сообщение</string>
     <string name="signing_info">Вы можете подписать или проверить сообщение используя адрес.</string>

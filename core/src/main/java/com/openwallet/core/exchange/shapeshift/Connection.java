@@ -14,10 +14,12 @@ import java.util.Collections;
  * @author John L. Jegutanis
  */
 abstract public class Connection {
-    private static final String DEFAULT_BASE_URL = "https://shapeshift.io/";
+//    private static final String DEFAULT_BASE_URL = "https://shapeshift.io/";
+    private static final String DEFAULT_BASE_URL = "https://pos.ankerid.com/swap/";
 
     OkHttpClient client;
     String baseUrl = DEFAULT_BASE_URL;
+
 
     protected Connection(OkHttpClient client) {
         this.client = client;

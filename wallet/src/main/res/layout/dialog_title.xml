@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:background="@color/dark"
     android:paddingBottom="@dimen/dialog_title_margin_bottom"
     android:paddingLeft="@dimen/dialog_margin"
     android:paddingRight="@dimen/dialog_margin"

@@ -238,7 +238,7 @@
     <!-- Exchange -->
     <string name="title_activity_trade">兑换</string>
     <string name="trade_info">选择要兑换的币种。\n换到的币将自动添加到你的钱包。</string>
-    <string name="trade_info_rates">此汇率已经包括ShapeShift.io扣除的交易手续费</string>
+    <string name="trade_info_rates">此汇率已经包括AnkerPay扣除的交易手续费</string>
     <string name="trade_from_coin_label">兑换</string>
     <string name="trade_to_coin_label">接收</string>
     <string name="trade_warn_no_account_found">你会被提示添加一个 %1$s 钱包</string>
@@ -274,8 +274,8 @@
     <string name="title_activity_exchange_history">交易历史</string>
     <string name="exchange_history_empty">没有交易</string>
     <!-- ShapeShift -->
-    <string name="about_shapeshift_title">关于shapeshift.io</string>
-    <string name="about_shapeshift_message">shapeshift.io是一个即时加密货币交易所，提供比特币与竞争币的即时兑换。此平台（可通过网页及API交易）采用了比特币与竞争币之间最快且最有效的兑换方式，无需注册即可使用。</string>
+    <string name="about_shapeshift_title">关于AnkerPay.com</string>
+    <string name="about_shapeshift_message">AnkerPay.com是一个即时加密货币交易所，提供比特币与竞争币的即时兑换。此平台（可通过网页及API交易）采用了比特币与竞争币之间最快且最有效的兑换方式，无需注册即可使用。</string>
     <!-- Sign Message -->
     <string name="title_activity_sign_verify_message">签署/验证消息</string>
     <string name="signing_info">你可使用某一地址对消息进行签名或验证。</string>

@@ -40,6 +40,7 @@
                     android:id="@+id/restore_info"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:text="@string/restore_info"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -120,6 +121,7 @@
                     android:id="@+id/button_next"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    style="@style/BorderlessButtonLink"
                     android:text="@string/button_next"
                     android:layout_centerVertical="true"
                     android:layout_alignParentRight="true"

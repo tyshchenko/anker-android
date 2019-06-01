@@ -85,7 +85,7 @@ public class ColdstakActivity extends BaseWalletActivity {
 			Value balance = account.getBalance();
             final Value amount = CoinID.ANKCOIN_MAIN.getCoinType().value(100000000000L);
 			if (! balance.isLessThan(amount) ) {
-				new AlertDialog.Builder(this)
+				new DialogBuilderLight(this)
 						.setTitle(getString(R.string.coldstak_add_title))
                         .setMessage(R.string.coldstak_add)
 						.setPositiveButton(R.string.button_ok, new DialogInterface.OnClickListener() {
@@ -103,7 +103,7 @@ public class ColdstakActivity extends BaseWalletActivity {
                                         account.completeTransaction(sendRequest);
                                         final Wallet wallet = application.getWallet();
                                         if (wallet.isEncrypted()) {
-                                            AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                                            DialogBuilder builder = new DialogBuilder(context);
                                             builder.setTitle("Unlock your Wallet");
                                             final EditText input = new EditText(context);
                                             input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
@@ -145,14 +145,14 @@ public class ColdstakActivity extends BaseWalletActivity {
 						.setNegativeButton(R.string.button_cancel, null)
 						.create().show();
 			} else {
-				new AlertDialog.Builder(this)
+				new DialogBuilderLight(this)
 						.setTitle(getString(R.string.coldstak_not1000_title))
                         .setMessage(R.string.coldstak_not1000)
 						.setPositiveButton(R.string.button_ok, null)
 						.create().show();
 			}
 		} else {
-			new AlertDialog.Builder(this)
+			new DialogBuilderLight(this)
 					.setTitle(getString(R.string.not_haveank_title))
 					.setMessage(R.string.not_haveank)
 					.setPositiveButton(R.string.button_ok, null)
@@ -178,7 +178,7 @@ public class ColdstakActivity extends BaseWalletActivity {
             //wait one confirm
             //sendmessage to server
             //wait and check for active
-            new AlertDialog.Builder(context)
+            new DialogBuilder(context)
                     .setTitle(getString(R.string.coldstak_ok_title))
                     .setMessage(R.string.coldstak_ok)
                     .setPositiveButton(R.string.button_ok, null)

@@ -8,6 +8,7 @@ import android.support.v4.app.DialogFragment;
 
 import com.openwallet.wallet.R;
 import com.openwallet.wallet.ui.DialogBuilder;
+import com.openwallet.wallet.ui.DialogBuilderLight;
 
 import static com.openwallet.core.Preconditions.checkState;
 
@@ -30,7 +31,7 @@ public class TermsOfUseDialog extends DialogFragment {
     }
 
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        final DialogBuilder builder = new DialogBuilder(getActivity());
+        final DialogBuilderLight builder = new DialogBuilderLight(getActivity());
         builder.setTitle(R.string.terms_of_service_title);
         builder.setMessage(R.string.terms_of_service);
 
