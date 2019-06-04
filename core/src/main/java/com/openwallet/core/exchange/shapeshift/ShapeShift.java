@@ -224,7 +224,7 @@ public class ShapeShift extends Connection {
         ShapeShiftAmountTx reply = new ShapeShiftAmountTx(getMakeApiCall(request));
         if (!reply.isError) {
             checkPair(pair, reply.pair);
-            checkValue(amount, reply.withdrawalAmount);
+            checkValue(amount, reply.depositAmount);
             checkAddress(withdrawal, reply.withdrawal);
         }
         return reply;

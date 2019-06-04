@@ -569,8 +569,9 @@ public class MakeTransactionFragment extends Fragment {
                         // If no values set, make the call
                         if (tradeDepositAddress == null || tradeDepositAmount == null ||
                                 tradeWithdrawAddress == null || tradeWithdrawAmount == null) {
-                            ShapeShiftNormalTx normalTx =
-                                    shapeShift.exchange(sendToAddress, refundAddress);
+                            ShapeShiftAmountTx normalTx =
+                                    shapeShift.exchangeForAmount(sendAmount, sendToAddress, refundAddress);
+//                                    shapeShift.exchange(sendToAddress, refundAddress);
                             // TODO, show a retry message
                             if (normalTx.isError) throw new Exception(normalTx.errorMessage);
                             tradeDepositAddress = normalTx.deposit;
