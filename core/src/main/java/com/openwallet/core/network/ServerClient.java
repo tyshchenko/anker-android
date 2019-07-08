@@ -648,8 +648,8 @@ public class ServerClient implements BitBlockchainConnection {
 
         try {
             ResultMessage result = stratumClient.call(message).get();
+//Toast.makeText(getActivity(), result, Toast.LENGTH_SHORT).show();
             String txId = result.getResult().getString(0);
-
             // FIXME could return {u'message': u'', u'code': -25}
             log.info("got tx {} =?= {}", txId, tx.getHash());
             checkState(tx.getHash().toString().equals(txId));

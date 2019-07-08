@@ -222,6 +222,7 @@ public class Constants {
 
     public static final HashMap<CoinType, Integer> COINS_ICONS;
     public static final HashMap<CoinType, String> COINS_BLOCK_EXPLORERS;
+    public static final HashMap<CoinType, String> COINS_BLOCK_EXPLORERS_ADR;
     static {
         COINS_ICONS = new HashMap<>();
         COINS_ICONS.put(CoinID.ANKCOIN_MAIN.getCoinType(), R.drawable.ankcoin);
@@ -311,6 +312,11 @@ public class Constants {
         COINS_BLOCK_EXPLORERS.put(CoinID.RICHCOIN_MAIN.getCoinType(), "https://explorer.richcoin.us/transaction?transaction=%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.IXCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/ixc/tx.dws?%s");
         COINS_BLOCK_EXPLORERS.put(CoinID.ANKCOIN_MAIN.getCoinType(), "https://explorer.ankerid.com/tx/%s");
+
+        COINS_BLOCK_EXPLORERS_ADR = new HashMap<CoinType, String>();
+        COINS_BLOCK_EXPLORERS_ADR.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://coin.cz/btc/address/%s");
+        COINS_BLOCK_EXPLORERS_ADR.put(CoinID.LITECOIN_MAIN.getCoinType(), "https://coin.cz/ltc/address/%s");
+        COINS_BLOCK_EXPLORERS_ADR.put(CoinID.DASH_MAIN.getCoinType(), "https://coin.cz/dash/address/%s");
     }
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();

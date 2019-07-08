@@ -294,7 +294,7 @@ public class TradeStatusFragment extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_delete:
-                new AlertDialog.Builder(getActivity())
+                new DialogBuilderLight(getActivity())
                         .setMessage(R.string.trade_status_delete_message)
                         .setNegativeButton(R.string.button_cancel, null)
                         .setPositiveButton(R.string.button_ok, new DialogInterface.OnClickListener() {
@@ -379,7 +379,7 @@ public class TradeStatusFragment extends Fragment {
         final CoinType withdrawType = withdrawAddress.getType();
         final List<WalletAccount> accounts = application.getAccounts(withdrawAddress);
 
-        if (accounts.size() > 0 || Constants.COINS_BLOCK_EXPLORERS.containsKey(withdrawType)) {
+        if (accounts.size() > 0 || Constants.COINS_BLOCK_EXPLORERS_ADR.containsKey(withdrawType)) {
             setVisible(viewTransaction);
         } else {
             setGone(viewTransaction);
@@ -389,30 +389,32 @@ public class TradeStatusFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String accountId = null;
-                for (WalletAccount account : accounts) {
-                    if (account.getTransaction(txId) != null) {
-                        accountId = account.getId();
-                        break;
-                    }
-                }
-                if (accountId != null && txId != null) {
-                    Intent intent = new Intent(getActivity(), TransactionDetailsActivity.class);
-                    intent.putExtra(Constants.ARG_ACCOUNT_ID, accountId);
-                    intent.putExtra(Constants.ARG_TRANSACTION_ID, txId);
-                    startActivity(intent);
-                } else {
+//                for (WalletAccount account : accounts) {
+//                    if (account.getTransaction(txId) != null) {
+//                        accountId = account.getId();
+//                        break;
+//                    }
+ //               }
+//                if (accountId != null && txId != null) {
+//                    Intent intent = new Intent(getActivity(), TransactionDetailsActivity.class);
+//                    intent.putExtra(Constants.ARG_ACCOUNT_ID, accountId);
+//                    intent.putExtra(Constants.ARG_TRANSACTION_ID, txId);
+//                    startActivity(intent);
+//                } else {
                     // Take to an external blockchain explorer
-                    if (Constants.COINS_BLOCK_EXPLORERS.containsKey(withdrawType)) {
-                        String url = String.format(Constants.COINS_BLOCK_EXPLORERS.get(withdrawType), txId);
+                    if (Constants.COINS_BLOCK_EXPLORERS_ADR.containsKey(withdrawType)) {
+                        String url = String.format(Constants.COINS_BLOCK_EXPLORERS_ADR.get(withdrawType), txId);
                         Intent i = new Intent(Intent.ACTION_VIEW);
                         i.setData(Uri.parse(url));
                         startActivity(i);
+//                        Toast.makeText(getActivity(), url,
+//                                Toast.LENGTH_SHORT).show();
                     } else {
                         // Should not happen
                         Toast.makeText(getActivity(), R.string.error_generic,
                                 Toast.LENGTH_SHORT).show();
                     }
-                }
+//                }
             }
         });
     }

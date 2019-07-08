@@ -663,7 +663,8 @@ public class MakeTransactionFragment extends Fragment {
 
                 if (sourceAccount != null) {
                     if (!sourceAccount.broadcastTxSync(request.tx)) {
-                        throw new Exception("Error broadcasting transaction: " + request.tx.getHashAsString());
+                        
+                        throw new Exception("Have Error broadcasting transaction: " + request.tx.getHashAsString());
                     }
                 } else {
                     // TODO handle better

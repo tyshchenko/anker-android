@@ -896,7 +896,8 @@ public class TradeSelectFragment extends Fragment implements ExchangeCheckSuppor
             // ignore printing errors for null and zero amounts
             if (showErrors) {
                 if (depositAmount == null || withdrawAmount == null) {
-                    amountError.setText(R.string.amount_error);
+                    //amountError.setText(R.string.amount_error);
+                    amountError.setText("");
                 } else if (depositAmount.isNegative() || withdrawAmount.isNegative()) {
                     amountError.setText(R.string.amount_error_negative);
                 } else if (!isAmountWithinLimits(depositAmount) || !isAmountWithinLimits(withdrawAmount)) {
